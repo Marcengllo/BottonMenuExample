@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNamaBangun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perhitungan Persegi Panjang"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/editTextLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Panjang"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lebar"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Luas"
+        android:onClick="calculateArea" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hasil"
+        android:textStyle="bold" />
+
+</LinearLayout>

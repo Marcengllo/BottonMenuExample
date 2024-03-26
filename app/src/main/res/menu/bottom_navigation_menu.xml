@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_item1"
-        android:title="Menu"
-        android:icon="@android:drawable/ic_menu_call"/>
+        android:title="Bangun Datar"
+        android:icon="@android:drawable/ic_media_pause"/>
     <item
         android:id="@+id/menu_item2"
-        android:title="Toko"
-        android:icon="@android:drawable/ic_menu_save"/>
+        android:title="Bagun Ruang"
+        android:icon="@android:drawable/radiobutton_on_background"/>
     <item
         android:id="@+id/menu_item3"
-        android:title="User"
-        android:icon="@android:drawable/ic_menu_camera"/>
+        android:title="Akun"
+        android:icon="@android:drawable/ic_menu_save"/>
 </menu>
