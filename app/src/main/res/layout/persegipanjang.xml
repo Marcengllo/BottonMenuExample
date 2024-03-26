@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -15,6 +16,12 @@
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:srcCompat="@drawable/ic_launcher_background"/>
     <EditText
         android:id="@+id/editTextLength"
         android:layout_width="match_parent"

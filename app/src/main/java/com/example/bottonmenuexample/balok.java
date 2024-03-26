@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 public class balok extends AppCompatActivity {
 
     private EditText editTextPanjang;
@@ -23,6 +25,15 @@ public class balok extends AppCompatActivity {
         editTextLebar = findViewById(R.id.editTextLebar);
         editTextTinggi = findViewById(R.id.editTextTinggi);
         textViewResult = findViewById(R.id.textViewResult);
+
+        ImageView imageView = findViewById(R.id.imageView);
+        String imageUrl = "https://akcdn.detik.net.id/visual/2023/02/24/ilustrasi-bangun-ruang-balok_169.jpeg?w=650";
+
+        Glide.with(this)
+                .load(imageUrl)
+                .placeholder(R.drawable.ic_launcher_background) // Gambar placeholder jika gambar belum dimuat
+                .error(R.drawable.ic_launcher_foreground) // Gambar yang ditampilkan jika terjadi kesalahan
+                .into(imageView);
     }
 
     public void calculateVolume(View view) {

@@ -4,8 +4,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.bumptech.glide.Glide;
 
 public class segitiga extends AppCompatActivity {
     private EditText editTextAlas;
@@ -20,6 +23,15 @@ public class segitiga extends AppCompatActivity {
         editTextAlas = findViewById(R.id.editTextAlas);
         editTextTinggi = findViewById(R.id.editTextTinggi);
         textViewResult = findViewById(R.id.textViewResult);
+
+        ImageView imageView = findViewById(R.id.imageView);
+        String imageUrl = "https://cdn0-production-images-kly.akamaized.net/HMlQZTZBi9T7WUSt6wXjJFv2sic=/500x667/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3471854/original/039486200_1622699012-sama_sisi.jpg";
+
+        Glide.with(this)
+                .load(imageUrl)
+                .placeholder(R.drawable.ic_launcher_background) // Gambar placeholder jika gambar belum dimuat
+                .error(R.drawable.ic_launcher_foreground) // Gambar yang ditampilkan jika terjadi kesalahan
+                .into(imageView);
     }
 
     public void calculateArea(View view) {
