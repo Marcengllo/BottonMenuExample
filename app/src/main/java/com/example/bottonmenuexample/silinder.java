@@ -26,7 +26,7 @@ public class silinder extends AppCompatActivity {
         textViewResult = findViewById(R.id.textViewResult);
         ImageView imageView = findViewById(R.id.imageView);
 
-        String imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQqbwPpQaDtrNl4pWekoGX95QwinnsQQmmdKl95fqb2yq3iN9_cRV2wbFYUmoRDnW-oLk&usqp=CAU";
+        String imageUrl = "https://asset-a.grid.id//crop/0x0:0x0/700x0/photo/2022/03/29/tabungjpeg-20220329043914.jpeg";
 
         Glide.with(this)
                 .load(imageUrl)

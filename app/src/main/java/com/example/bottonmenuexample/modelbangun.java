@@ -4,6 +4,12 @@ public class modelbangun {
     String NamaBangunn;
     String ImageBangun;
 
+    String DescBangun;
+
+    public String getDescBangun() {return DescBangun;}
+
+    public void setDescBangun(String descBangun) {DescBangun = descBangun;}
+
     public String getNamaBangunn() {
         return NamaBangunn;
     }

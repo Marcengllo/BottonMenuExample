@@ -49,21 +49,25 @@ public class Fragment1 extends Fragment implements adapterbangun.ItemClickListen
 
         modelbangun persegi = new modelbangun();
         persegi.setNamaBangunn("Persegi");
+        persegi.setDescBangun(" L = s x s");
         persegi.setImageBangun("https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQRMdhid5P1JGVYD9LWMrAy4qaRhLq0G5HOLkRvK6ORTI2-az7FWgB4M-IPYd1nGYoA");
         listDataBangunDatar.add(persegi);
 
         modelbangun persegipanjang = new modelbangun();
         persegipanjang.setNamaBangunn("Persegi Panjang");
+        persegipanjang.setDescBangun("K = 2 x (p +l)");
         persegipanjang.setImageBangun("https://cdn0-production-images-kly.akamaized.net/Ndj6uHSUufXXhsB4tQ_Mt7hnaRY=/500x281/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3409131/original/045818300_1616496131-persegi_panjang.jpg");
         listDataBangunDatar.add(persegipanjang);
 
         modelbangun segitiga = new modelbangun();
         segitiga.setNamaBangunn("Segitiga");
+        segitiga.setDescBangun("L = 1/2 x a x t");
         segitiga.setImageBangun("https://cdn0-production-images-kly.akamaized.net/HMlQZTZBi9T7WUSt6wXjJFv2sic=/500x667/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3471854/original/039486200_1622699012-sama_sisi.jpg");
         listDataBangunDatar.add(segitiga);
 
         modelbangun lingkaran = new modelbangun();
         lingkaran.setNamaBangunn("Lingkaran");
+        lingkaran.setDescBangun("π x r²");
         lingkaran.setImageBangun("https://awsimages.detik.net.id/community/media/visual/2018/03/08/2e61153c-d96d-4c90-8bac-87ccf009245b.jpeg?w=600&q=90");
         listDataBangunDatar.add(lingkaran);
 

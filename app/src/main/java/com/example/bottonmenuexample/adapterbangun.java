@@ -34,6 +34,7 @@ public class adapterbangun extends RecyclerView.Adapter<adapterbangun.ViewHolder
     public void onBindViewHolder(@NonNull adapterbangun.ViewHolder holder, int position) {
         modelbangun modelbangun = listData.get(position);
         holder.tvBangun.setText(modelbangun.getNamaBangunn());
+        holder.tvDesc.setText(modelbangun.getDescBangun());
         Glide.with(holder.itemView.getContext()).load(modelbangun.getImageBangun()).into(holder.ivBangun);
     }
 
@@ -41,12 +42,13 @@ public class adapterbangun extends RecyclerView.Adapter<adapterbangun.ViewHolder
     public int getItemCount() {return listData.size();}
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        TextView tvBangun;
+        TextView tvBangun,tvDesc;
         ImageView ivBangun;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvBangun = itemView.findViewById(R.id.tvBangun);
+            tvDesc = itemView.findViewById(R.id.tvDesc);
             ivBangun = itemView.findViewById(R.id.ivBangun);
             itemView.setOnClickListener(this);
         }

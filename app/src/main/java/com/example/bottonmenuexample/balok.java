@@ -27,7 +27,7 @@ public class balok extends AppCompatActivity {
         textViewResult = findViewById(R.id.textViewResult);
 
         ImageView imageView = findViewById(R.id.imageView);
-        String imageUrl = "https://akcdn.detik.net.id/visual/2023/02/24/ilustrasi-bangun-ruang-balok_169.jpeg?w=650";
+        String imageUrl = "https://asset-a.grid.id//crop/0x0:0x0/700x0/photo/2022/03/23/bangun-balokjpeg-20220323012813.jpeg";
 
         Glide.with(this)
                 .load(imageUrl)
