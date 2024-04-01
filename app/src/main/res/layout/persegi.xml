@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/background3"
     android:padding="16dp">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Perhitungan Persegi"
         android:textSize="37sp"
+        android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"/>
 
@@ -28,6 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="Masukkan panjang sisi"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:inputType="numberDecimal"
         android:minHeight="48dp" />
 
@@ -36,5 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hitung"
+        android:backgroundTint="#BCBCBC"
+        android:textColor="@color/black"
         android:layout_gravity="center_horizontal"/>
 </LinearLayout>
